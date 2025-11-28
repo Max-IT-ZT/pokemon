@@ -39,7 +39,7 @@ export type PokemonDetails = {
 
 export async function getPokemons(): Promise<PokemonsData> {
   try {
-    const response = await fetch(`${API_BASE_URL}pokemon?offset=20&limit=20`);
+    const response = await fetch(`${API_BASE_URL}pokemon?offset=200&limit=200`);
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
